@@ -11,19 +11,11 @@
 
       if (uid) eventObject["user_id"] = uid;
 
-      const isHeadless =
-        window.navigator.webdriver === true || /HeadlessChrome/.test(window.navigator.userAgent) === true;
-
-      if (!isHeadless && "https://app.requestly.io/goodbye/" === window.location.href && deviceId) {
-        const a = { api_key: "62ff1b46909e50358cfca0668d41f011", events: [eventObject], user_properties: attributes };
-        const b = new Blob([JSON.stringify(a)]);
-        navigator.sendBeacon("https://api2.amplitude.com/2/httpapi", b);
-      }
     </script>
     <script>
       // Set favicon
       const hostname = window.location.hostname;
-      let faviconPath = '/favicon.png'; 
+      let faviconPath = '/favicon.png';
 
       if (hostname.includes("sessionbear.com")) {
         faviconPath = '/sessionBearFavicon.png';
@@ -41,15 +33,6 @@
       }
 
       window.document.title = pageTitle;
-
-      if (window.location.pathname === "/pricing") {
-        
-        const description = "Free at $0, Lite for $8/month, Basic at $15/member/month, and the Professional plan—our best value—at $23/member/month.";
-        const metaTag = document.createElement("meta");
-        metaTag.name = "description";
-        metaTag.content = description;
-        document.querySelector("head").appendChild(metaTag);
-      }
     </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -262,8 +245,8 @@
       }
     </style>
 
-    <script type="module" crossorigin src="/assets/index-B4xJsgLF.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-9nKXsGnO.css">
+    <script type="module" crossorigin src="/assets/index-DWjFBnMr.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BE5t9Z6X.css">
   </head>
 
   <body class="dark">
