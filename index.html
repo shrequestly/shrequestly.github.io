@@ -2,16 +2,6 @@
 <html lang="en" class="perfect-scrollbar-off nav-open" dir="ltr">
   <head>
     <script>
-      if (
-        window.location.hostname !== "app.requestly.io" &&
-        window.location.hostname !== "beta.requestly.io" &&
-        window.location.hostname !== "app.sessionbear.com" &&
-        window.location.hostname !== "beta.sessionbear.com" &&
-        window.location.hostname !== "localhost" &&
-        isNaN(parseInt(window.location.hostname.replace(/\./g, ""))) // dumb check for an IP (or any number really)
-      ) {
-        window.location.href = "https://app.requestly.io";
-      }
 
       const deviceId = localStorage.getItem("__amplitude_deviceId");
       const uid = localStorage.getItem("__rq_uid");
